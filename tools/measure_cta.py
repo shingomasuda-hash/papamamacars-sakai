@@ -12,10 +12,10 @@ from PIL import Image
 
 
 def is_orange(r, g, b):
-    return r > 200 and 90 < g < 190 and b < 110 and r - b > 120
+    return r > 225 and 55 < g < 140 and b < 80 and r - g > 110
 
 
-def find_buttons(img, min_w_ratio=0.45, min_h=40):
+def find_buttons(img, min_w_ratio=0.30, min_h=40):
     w, h = img.size
     px = img.load()
     rows = []
